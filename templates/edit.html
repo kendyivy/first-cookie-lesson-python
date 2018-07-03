@@ -1,0 +1,35 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+
+  <body> 
+    <div class="container">        
+  <form action="{{url_for('results')}}" method="POST">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text"class="form-control" id="name" 
+    placeholder="name"
+    value="Joys">
+
+    <div class="form-group">
+    <label for="Email">Email</label>
+    <input type="text" class="form-control" id="Email" placeholder="Email"
+    value="Email">
+  </div>
+    
+  </div>
+  <div class="form-group">
+    <label for="course">course</label>
+    <input type="text" class="form-control" id="course" placeholder="course"
+    value="course">
+  </div>
+
+  
+  <button type="submit" class="btn btn-primary">submit</button><br><br>
+</form>  
+</div>
+  </body>
+
+     {%endblock%}
+
+
